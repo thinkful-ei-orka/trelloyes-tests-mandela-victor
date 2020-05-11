@@ -11,8 +11,8 @@ function App() {
   ))
   return (
     <main className="App">
-      <header>
-        <h1>Trelloyes</h1>
+      <header className='App-header'>
+        <h1>Trelloyes!</h1>
         <div className="App-list">
           {lists}
         </div>
