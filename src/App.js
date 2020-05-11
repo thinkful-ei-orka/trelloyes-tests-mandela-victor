@@ -10,10 +10,10 @@ function App() {
     <List key={list.id} header={list.header} cards={list.cardIds.map(id => STORE.allCards[id])} />
   ))
   return (
-    <main className="App">
+    <main className='App'>
       <header className='App-header'>
         <h1>Trelloyes!</h1>
-        <div className="App-list">
+        <div className='App-list'>
           {lists}
         </div>
       </header>
