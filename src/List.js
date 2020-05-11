@@ -1,6 +1,8 @@
 import React from 'react';
 import Card from './Card';
 
+import './List.css';
+
 
 export default function list (props)  {
     const cards = props.cards.map(card => (
@@ -8,9 +10,9 @@ export default function list (props)  {
     ));
     
     return (
-            <section className="list">
-                <header className="list-header">{props.header}</header>
-                <div className="list-cards">
+            <section className="List">
+                <header className="List-header">{props.header}</header>
+                <div className="List-cards">
                 {cards}
                 </div>
             </section>

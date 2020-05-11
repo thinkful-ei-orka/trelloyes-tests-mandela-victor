@@ -3,6 +3,8 @@ import React from 'react';
 import STORE from './store';
 import List from './List';
 
+import './App.css';
+
 function App() {
   const lists = STORE.lists.map(list => (
     <List key={list.id} header={list.header} cards={list.cardIds.map(id => STORE.allCards[id])} />
@@ -11,7 +13,7 @@ function App() {
     <main className="App">
       <header>
         <h1>Trelloyes</h1>
-        <div className="app-list">
+        <div className="App-list">
           {lists}
         </div>
       </header>
