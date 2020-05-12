@@ -11,7 +11,7 @@ it('renders', () => {
 
 it('renders', () => {
      const tree = renderer
-     .create(<Card className='Card' name='card name'/>)
+     .create(<Card className='Card' name='new card'/>)
      .toJSON();
      expect(tree).toMatchSnapshot();
 })
